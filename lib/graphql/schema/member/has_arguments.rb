@@ -169,11 +169,15 @@ module GraphQL
           # Cache this hash to avoid re-merging it
           arg_defns = context.warden.arguments(self)
           total_args_count = arg_defns.size
-
           finished_args = nil
           prepare_finished_args = -> {
             if total_args_count == 0
               finished_args = GraphQL::Execution::Interpreter::Arguments::EMPTY
+              if block_given?
+                block.call(finished_args)
+              end
+            elsif arguments_statically_coercible? && context.warden.cached_default_arguments?(self, values)
+              finished_args = context.warden.default_arguments(self, values)
               if block_given?
                 block.call(finished_args)
               end
@@ -200,6 +204,7 @@ module GraphQL
                         argument_values: argument_values,
                       )
                     }
+                    context.warden.cache_default_arguments(self, values, finished_args)
                     if block_given?
                       block.call(finished_args)
                     end

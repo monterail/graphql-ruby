@@ -98,7 +98,11 @@ module GraphQLBenchmark
       }
     end
 
-    result = StackProf.run(mode: :wall, interval: 10) do
+    StackProf.run(mode: :wall, interval: 10, out: "./introspection-out.dump") do
+      schema.to_json
+    end
+
+    report = StackProf.run(mode: :wall, interval: 10) do
       schema.to_json
     end
     StackProf::Report.new(result).print_text

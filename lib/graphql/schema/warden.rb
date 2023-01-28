@@ -179,6 +179,21 @@ module GraphQL
         @visible_arguments[argument_owner]
       end
 
+      def default_arguments(argument_owner, input_values)
+        @default_arguments ||= Hash.new { |h1, k1| h1[k1] = {} }
+        @default_arguments[argument_owner][input_values]
+      end
+
+      def cached_default_arguments?(argument_owner, input_values)
+        @default_arguments &&
+          @default_arguments[argument_owner].key?(input_values)
+      end
+
+      def cache_default_arguments(argument_owner, input_values, args_value)
+        @default_arguments ||= Hash.new { |h1, k1| h1[k1] = {} }
+        @default_arguments[argument_owner][input_values] = args_value
+      end
+
       # @return [Array<GraphQL::EnumType::EnumValue>] Visible members of `enum_defn`
       def enum_values(enum_defn)
         @visible_enum_arrays ||= read_through { |e| e.enum_values(@context) }

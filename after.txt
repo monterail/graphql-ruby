@@ -1,0 +1,1058 @@
+Warming up --------------------------------------
+Run large introspection
+                         1.000  i/100ms
+Calculating -------------------------------------
+Run large introspection
+                          4.423  (± 0.0%) i/s -     22.000  in   5.005526s
+==================================
+  Mode: wall(10)
+  Samples: 214187 (2.33% miss rate)
+  GC: 539 (0.25%)
+==================================
+     TOTAL    (pct)     SAMPLES    (pct)     FRAME
+    105858  (49.4%)       11486   (5.4%)     GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_args
+    105865  (49.4%)        6558   (3.1%)     GraphQL::Execution::Interpreter::Runtime#evaluate_selection
+      9101   (4.2%)        6065   (2.8%)     GraphQL::Execution::Interpreter::Runtime#set_all_interpreter_context
+     14576   (6.8%)        4330   (2.0%)     GraphQL::Schema::Field#public_send_field
+    105851  (49.4%)        3816   (1.8%)     GraphQL::Execution::Interpreter::Runtime#continue_field
+     29286  (13.7%)        3315   (1.5%)     GraphQL::Schema::Field#resolve
+      3277   (1.5%)        3277   (1.5%)     Kernel#is_a?
+      3036   (1.4%)        3036   (1.4%)     GraphQL::Query::Context#[]=
+      3956   (1.8%)        2775   (1.3%)     Hash#fetch
+    105857  (49.4%)        2425   (1.1%)     GraphQL::Execution::Interpreter::Runtime#after_lazy
+      5144   (2.4%)        2415   (1.1%)     GraphQL::Execution::Interpreter::Runtime#lazy?
+      5072   (2.4%)        2216   (1.0%)     GraphQL::Execution::Interpreter::Runtime#gather_selections
+      1729   (0.8%)        1729   (0.8%)     Kernel#hash
+    105866  (49.4%)        1621   (0.8%)     GraphQL::Execution::Interpreter::Runtime#evaluate_selections
+     25123  (11.7%)        1597   (0.7%)     GraphQL::Schema::LazyHandlingMethods#after_lazy
+      1587   (0.7%)        1587   (0.7%)     Kernel#respond_to?
+      4827   (2.3%)        1535   (0.7%)     GraphQL::Execution::Interpreter::Runtime#set_result
+      6939   (3.2%)        1526   (0.7%)     Kernel#public_send
+      2166   (1.0%)        1514   (0.7%)     GraphQL::Execution::Interpreter::Runtime::GraphQLResultHash#[]=
+      1513   (0.7%)        1513   (0.7%)     GraphQL::Execution::Interpreter::Runtime#dead_result?
+     34715  (16.2%)        1454   (0.7%)     GraphQL::Query#with_error_handling
+      1408   (0.7%)        1408   (0.7%)     GraphQL::Schema.lazy_methods
+      2548   (1.2%)        1383   (0.6%)     GraphQL::Schema::Field#authorized?
+      3923   (1.8%)        1343   (0.6%)     GraphQL::Execution::Interpreter::Runtime#continue_value
+      4077   (1.9%)        1325   (0.6%)     GraphQL::Schema::Object.authorized_new
+      4500   (2.1%)        1280   (0.6%)     GraphQL::Execution::Lazy::LazyMethodMap#get
+      2860   (1.3%)        1175   (0.5%)     Concurrent::Collection::MriMapBackend#compute_if_absent
+     13834   (6.5%)        1163   (0.5%)     GraphQL::Schema::Field#with_extensions
+      7050   (3.3%)        1142   (0.5%)     GraphQL::Schema::LazyHandlingMethods#lazy_method_name
+    105902  (49.4%)        1106   (0.5%)     Hash#each
+    108049  (50.4%)        1096   (0.5%)     Array#each
+      2639   (1.2%)        1079   (0.5%)     Kernel#dup
+      2900   (1.4%)        1059   (0.5%)     GraphQL::Schema::Member::HasArguments#arguments
+      2084   (1.0%)        1036   (0.5%)     Class#new
+      1035   (0.5%)        1035   (0.5%)     Array#initialize_copy
+       936   (0.4%)         936   (0.4%)     Module#===
+       836   (0.4%)         836   (0.4%)     Kernel#class
+      1184   (0.6%)         773   (0.4%)     GraphQL::Execution::Interpreter::Resolve.resolve
+       844   (0.4%)         722   (0.3%)     GraphQL::Query::Context#[]
+      7758   (3.6%)         709   (0.3%)     GraphQL::Schema::LazyHandlingMethods#lazy?
+       994   (0.5%)         691   (0.3%)     GraphQL::Schema::Validator.validate!
+      1227   (0.6%)         652   (0.3%)     Enumerable#find
+       618   (0.3%)         618   (0.3%)     GraphQL::Schema.error_handler
+    105869  (49.4%)         597   (0.3%)     GraphQL::Execution::Interpreter::Runtime#call_method_on_directives
+      1572   (0.7%)         591   (0.3%)     GraphQL::Schema::Enum.coerce_result
+    106814  (49.9%)         571   (0.3%)     GraphQL::Tracing::Traceable#trace
+      1626   (0.8%)         534   (0.2%)     GraphQL::Schema::Argument#coerce_into_values
+       529   (0.2%)         529   (0.2%)     GraphQL::Schema::Field#type
+       563   (0.3%)         516   (0.2%)     GraphQL::Execution::Interpreter::Runtime#directives_include?
+      1113   (0.5%)         515   (0.2%)     GraphQL::Schema::Member::HasValidators#validators
+       499   (0.2%)         499   (0.2%)     (sweeping)
+      1560   (0.7%)         475   (0.2%)     Kernel#initialize_dup
+    101020  (47.2%)         448   (0.2%)     GraphQL::Schema::Member::HasArguments#coerce_arguments
+       393   (0.2%)         393   (0.2%)     GraphQL::Schema::Field#extras
+       365   (0.2%)         365   (0.2%)     NilClass#===
+     33486  (15.6%)         333   (0.2%)     GraphQL::Execution::Errors#with_error_handling
+       327   (0.2%)         327   (0.2%)     Hash#[]
+       324   (0.2%)         324   (0.2%)     Hash#[]=
+       404   (0.2%)         323   (0.2%)     GraphQL::Introspection::TypeType#kind
+       473   (0.2%)         310   (0.1%)     GraphQL::Introspection::TypeType#of_type
+    104067  (48.6%)         309   (0.1%)     GraphQL::Execution::Interpreter::Runtime#resolve_list_item
+       297   (0.1%)         297   (0.1%)     GraphQL::Schema::Member::HasArguments#own_arguments
+       356   (0.2%)         294   (0.1%)     GraphQL::Language::Lexer.run_lexer
+       925   (0.4%)         287   (0.1%)     GraphQL::Schema::Warden#arguments
+       623   (0.3%)         259   (0.1%)     Array#any?
+       393   (0.2%)         257   (0.1%)     GraphQL::Execution::Interpreter::ArgumentsCache.prepare_args_hash
+    107073  (50.0%)         253   (0.1%)     GraphQL::Dataloader::NullDataloader#append_job
+      2845   (1.3%)         253   (0.1%)     GraphQL::Schema::Field#run_extensions_before_resolve
+       399   (0.2%)         248   (0.1%)     GraphQL::Query#get_type
+       247   (0.1%)         247   (0.1%)     Kernel#block_given?
+       244   (0.1%)         244   (0.1%)     Hash#any?
+       416   (0.2%)         242   (0.1%)     GraphQL::Schema::Member::BaseDSLMethods#graphql_name
+       509   (0.2%)         237   (0.1%)     GraphQL::Types::String.coerce_result
+       220   (0.1%)         220   (0.1%)     #<Class:0x000000010088b430>.lambda
+       201   (0.1%)         201   (0.1%)     GraphQL::Execution::Interpreter::Runtime::GraphQLResult#initialize
+       190   (0.1%)         190   (0.1%)     GraphQL::Schema::Scalar.kind
+       381   (0.2%)         180   (0.1%)     GraphQL::Execution::Interpreter::Runtime::GraphQLResultHash#initialize
+       178   (0.1%)         178   (0.1%)     Hash#key?
+       176   (0.1%)         176   (0.1%)     GraphQL::Schema::Object#initialize
+       171   (0.1%)         166   (0.1%)     Enumerable#sort_by
+       165   (0.1%)         165   (0.1%)     GraphQL::Execution::Interpreter::Arguments#empty?
+       221   (0.1%)         165   (0.1%)     GraphQL::Schema::Member::HasDirectives#directives
+       160   (0.1%)         160   (0.1%)     Array#include?
+       235   (0.1%)         158   (0.1%)     GraphQL::Schema::Member::HasDirectives#directives
+       155   (0.1%)         155   (0.1%)     GraphQL::Schema::EnumValue#value
+       197   (0.1%)         153   (0.1%)     GraphQL::Schema::Warden#possible_types
+       148   (0.1%)         148   (0.1%)     Kernel#freeze
+      1620   (0.8%)         133   (0.1%)     GraphQL::Schema::Warden#reachable_type_set
+       709   (0.3%)         133   (0.1%)     GraphQL::Query#with_prepared_ast
+       205   (0.1%)         130   (0.1%)     GraphQL::Schema::Warden#enum_values
+       128   (0.1%)         128   (0.1%)     Hash#values
+      4201   (2.0%)         125   (0.1%)     GraphQL::Execution::Interpreter::Runtime#authorized_new
+       431   (0.2%)         125   (0.1%)     GraphQL::Schema::Warden#visible?
+    105867  (49.4%)         124   (0.1%)     GraphQL::Execution::Interpreter::Runtime#tap_or_each
+      1443   (0.7%)         120   (0.1%)     GraphQL::Schema::Warden#read_through
+       484   (0.2%)         118   (0.1%)     GraphQL::Schema::Warden#visible_argument?
+       461   (0.2%)         117   (0.1%)     GraphQL::Schema::Member::HasDeprecationReason#deprecation_reason
+       161   (0.1%)         117   (0.1%)     GraphQL::BaseType::ModifiesAnotherType#unwrap
+       216   (0.1%)         116   (0.1%)     GraphQL::Schema::Argument#authorized_as_type?
+       295   (0.1%)         116   (0.1%)     GraphQL::Schema::Argument#prepare_value
+    101176  (47.2%)         115   (0.1%)     GraphQL::Execution::Interpreter::ArgumentsCache#dataload_for
+       241   (0.1%)         115   (0.1%)     GraphQL::Schema::Warden#visible_and_reachable_type?
+       108   (0.1%)         108   (0.1%)     String#encoding
+       164   (0.1%)         108   (0.1%)     GraphQL::Execution::Interpreter::Arguments#initialize
+       195   (0.1%)         107   (0.0%)     GraphQL::Execution::Interpreter::Runtime::GraphQLResultArray#[]=
+       429   (0.2%)         106   (0.0%)     GraphQL::Schema::Member::HasDeprecationReason#deprecation_reason
+       105   (0.0%)         105   (0.0%)     String#encode
+       104   (0.0%)         104   (0.0%)     GraphQL::Schema::NonNull#non_null?
+       104   (0.0%)         104   (0.0%)     GraphQL::Schema::Member::TypeSystemHelpers#non_null?
+      1092   (0.5%)         102   (0.0%)     GraphQL::Schema::Warden.visible_entry?
+       102   (0.0%)         102   (0.0%)     GraphQL::Execution::Interpreter::Runtime::GraphQLResult#initialize
+       101   (0.0%)         101   (0.0%)     Array#push
+       182   (0.1%)         101   (0.0%)     GraphQL::Query#fragments
+       101   (0.0%)         101   (0.0%)     GraphQL::Schema::Member::BaseDSLMethods#overridden_graphql_name
+       101   (0.0%)         101   (0.0%)     GraphQL::Query::Context#warden
+        94   (0.0%)          94   (0.0%)     GraphQL::TypeKinds::TypeKind#wraps?
+       596   (0.3%)          93   (0.0%)     GraphQL::Schema::Member::HasFields#fields
+        92   (0.0%)          91   (0.0%)     GraphQL::Schema::Warden#get_type
+       203   (0.1%)          91   (0.0%)     GraphQL::Filter#call
+       161   (0.1%)          87   (0.0%)     Racc::Parser#_racc_do_parse_c
+       548   (0.3%)          87   (0.0%)     GraphQL::Schema::Argument#deprecation_reason
+        83   (0.0%)          83   (0.0%)     GraphQL::Schema::Argument#type
+       428   (0.2%)          81   (0.0%)     GraphQL::Schema::Warden#visible_field?
+       108   (0.1%)          80   (0.0%)     GraphQL::Schema::Member::HasValidators#validators
+       178   (0.1%)          76   (0.0%)     GraphQL::Execution::Interpreter::Runtime::GraphQLResultArray#initialize
+       714   (0.3%)          76   (0.0%)     GraphQL::Schema::LazyHandlingMethods#after_any_lazies
+       305   (0.1%)          75   (0.0%)     GraphQL::Schema::Argument#authorized?
+       305   (0.1%)          74   (0.0%)     GraphQL::Schema::Field::ScopeExtension#after_resolve
+        73   (0.0%)          73   (0.0%)     GraphQL::Schema::Member::BaseDSLMethods#default_graphql_name
+       159   (0.1%)          67   (0.0%)     Hash#each_value
+       108   (0.1%)          66   (0.0%)     GraphQL::Introspection::InputValueType#default_value
+        69   (0.0%)          66   (0.0%)     GraphQL::Schema::Wrapper#unwrap
+       116   (0.1%)          65   (0.0%)     GraphQL::Query#warden
+        64   (0.0%)          64   (0.0%)     GraphQL::Schema::Object.kind
+        62   (0.0%)          62   (0.0%)     Hash#initialize
+       229   (0.1%)          61   (0.0%)     GraphQL::Introspection::FieldType#args
+        60   (0.0%)          60   (0.0%)     (marking)
+       353   (0.2%)          55   (0.0%)     GraphQL::Introspection::InputValueType#is_deprecated
+        93   (0.0%)          51   (0.0%)     GraphQL::Schema::Warden.from_context
+        50   (0.0%)          50   (0.0%)     Hash#initialize_copy
+        47   (0.0%)          47   (0.0%)     Array#concat
+        67   (0.0%)          46   (0.0%)     GraphQL::Query#arguments_cache
+       147   (0.1%)          46   (0.0%)     GraphQL::BaseType::ModifiesAnotherType#unwrap
+       172   (0.1%)          45   (0.0%)     Enumerable#select
+        91   (0.0%)          42   (0.0%)     GraphQL::Schema::Member::HasInterfaces#interfaces
+        39   (0.0%)          39   (0.0%)     GraphQL::TypeKinds::TypeKind#non_null?
+        39   (0.0%)          39   (0.0%)     GraphQL::Schema::NonNull#kind
+        38   (0.0%)          38   (0.0%)     String#to_s
+        36   (0.0%)          36   (0.0%)     GraphQL::Execution::Interpreter::ArgumentValue#initialize
+        34   (0.0%)          34   (0.0%)     GraphQL::Schema::Enum.kind
+       245   (0.1%)          34   (0.0%)     GraphQL::Introspection::FieldType#is_deprecated
+       150   (0.1%)          34   (0.0%)     GraphQL::Schema::Member::HasFields#get_field
+        82   (0.0%)          31   (0.0%)     Method#call
+       104   (0.0%)          30   (0.0%)     GraphQL::Schema::Member::HasArguments#validate_directive_argument
+        29   (0.0%)          29   (0.0%)     GraphQL::Types::Boolean.coerce_result
+       184   (0.1%)          28   (0.0%)     GraphQL::Introspection::TypeType#fields
+        51   (0.0%)          27   (0.0%)     GraphQL::Schema.visible?
+       175   (0.1%)          27   (0.0%)     GraphQL::Filter::MergedOnly#call
+      2740   (1.3%)          26   (0.0%)     GraphQL::Schema::FieldExtension#resolve
+        24   (0.0%)          24   (0.0%)     GraphQL::TypeKinds::TypeKind#input_object?
+        24   (0.0%)          24   (0.0%)     GraphQL::Schema::Argument#description
+        61   (0.0%)          23   (0.0%)     GraphQL::Introspection::TypeType#interfaces
+        22   (0.0%)          22   (0.0%)     GraphQL::Types::Boolean.coerce_input
+        22   (0.0%)          22   (0.0%)     Module#ancestors
+        21   (0.0%)          21   (0.0%)     Array#shift
+       137   (0.1%)          21   (0.0%)     Enumerator#each
+        21   (0.0%)          21   (0.0%)     GraphQL::Schema::Field#description
+        21   (0.0%)          21   (0.0%)     Kernel#frozen?
+        21   (0.0%)          20   (0.0%)     GraphQL::Schema::Argument#default_value?
+        19   (0.0%)          19   (0.0%)     GraphQL::Query#interpreter?
+        19   (0.0%)          19   (0.0%)     GraphQL::Schema::NonNull#graphql_name
+        54   (0.0%)          19   (0.0%)     GraphQL::Language::Parser#make_node
+        21   (0.0%)          19   (0.0%)     Set#include?
+        18   (0.0%)          18   (0.0%)     GraphQL::Execution::Interpreter::ArgumentValue#default_used?
+        17   (0.0%)          17   (0.0%)     GraphQL::Schema::Member::BaseDSLMethods#authorized?
+        17   (0.0%)          17   (0.0%)     GraphQL::TypeKinds::TypeKind#list?
+       683   (0.3%)          17   (0.0%)     GraphQL::Schema::Warden#fields
+        16   (0.0%)          16   (0.0%)     Hash#size
+        46   (0.0%)          16   (0.0%)     GraphQL::Language::Lexer.emit
+        27   (0.0%)          16   (0.0%)     GraphQL::Schema::Member::HasFields#visible_interface_implementation?
+        32   (0.0%)          15   (0.0%)     GraphQL::Schema::Warden#referenced?
+        14   (0.0%)          14   (0.0%)     Integer#ord
+        14   (0.0%)          14   (0.0%)     GraphQL::Schema::List#kind
+        14   (0.0%)          14   (0.0%)     GraphQL::Query::Context#dataloader
+        14   (0.0%)          13   (0.0%)     GraphQL::Introspection::TypeType#input_fields
+        13   (0.0%)          12   (0.0%)     Set#add
+        76   (0.0%)          12   (0.0%)     GraphQL::Schema::Warden#interfaces
+        12   (0.0%)          12   (0.0%)     GraphQL::Schema::LateBoundType#unwrap
+       326   (0.2%)          11   (0.0%)     GraphQL::StaticValidation::BaseVisitor::ContextMethods#on_field
+       305   (0.1%)          11   (0.0%)     GraphQL::StaticValidation::FieldsAreDefinedOnType#on_field
+        11   (0.0%)          11   (0.0%)     GraphQL::Schema::Field#visible?
+        10   (0.0%)          10   (0.0%)     Array#pack
+        10   (0.0%)          10   (0.0%)     GraphQL::Schema::Member::HasFields#own_fields
+        11   (0.0%)          10   (0.0%)     GraphQL::Language::Parser#next_token
+        35   (0.0%)           9   (0.0%)     GraphQL::Introspection::TypeType#enum_values
+       109   (0.1%)           9   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge#find_fields_and_fragments
+       112   (0.1%)           9   (0.0%)     GraphQL::Schema.get_field
+        11   (0.0%)           9   (0.0%)     GraphQL::StaticValidation::FieldsHaveAppropriateSelections#validate_field_selections
+       213   (0.1%)           9   (0.0%)     GraphQL::Schema::Warden#initialize
+        17   (0.0%)           9   (0.0%)     GraphQL::Language::Nodes::AbstractNode#initialize
+        43   (0.0%)           9   (0.0%)     Set#add?
+        14   (0.0%)           8   (0.0%)     GraphQL::Schema::Member::BaseDSLMethods#introspection?
+        29   (0.0%)           8   (0.0%)     GraphQL::Schema::Enum.enum_values
+         8   (0.0%)           8   (0.0%)     GraphQL::TypeKinds::TypeKind#interface?
+        12   (0.0%)           8   (0.0%)     GraphQL::Schema::Member::HasDirectives#directives
+       263   (0.1%)           7   (0.0%)     GraphQL::StaticValidation::FieldsHaveAppropriateSelections#on_field
+         7   (0.0%)           7   (0.0%)     GraphQL::TypeKinds::TypeKind#input?
+        20   (0.0%)           7   (0.0%)     GraphQL::Schema::FindInheritedValue#find_inherited_value
+         8   (0.0%)           7   (0.0%)     GraphQL::Query::NullContext.warden
+        29   (0.0%)           7   (0.0%)     Array#all?
+       362   (0.2%)           7   (0.0%)     GraphQL::Language::Visitor#on_abstract_node
+         7   (0.0%)           7   (0.0%)     GraphQL::Language::Nodes::Field#initialize_node
+         6   (0.0%)           6   (0.0%)     JSON::Ext::Generator::State#generate
+       640   (0.3%)           6   (0.0%)     GraphQL::Schema::Object.fields
+        86   (0.0%)           6   (0.0%)     GraphQL::Schema::Warden#get_field
+        11   (0.0%)           6   (0.0%)     GraphQL::Language::Token#initialize
+         6   (0.0%)           6   (0.0%)     GraphQL::Schema::Member::BaseDSLMethods#introspection
+         6   (0.0%)           6   (0.0%)     Module#<=
+        27   (0.0%)           6   (0.0%)     GraphQL::Schema::Member::HasDeprecationReason#deprecation_reason
+       398   (0.2%)           6   (0.0%)     GraphQL::StaticValidation::FragmentSpreadsArePossible#on_document
+        36   (0.0%)           5   (0.0%)     GraphQL::Schema::Warden#visible_type?
+       357   (0.2%)           5   (0.0%)     block (2 levels) in <module:UniqueDirectivesPerLocation>
+         5   (0.0%)           5   (0.0%)     Kernel#itself
+         7   (0.0%)           5   (0.0%)     Array#select
+         5   (0.0%)           5   (0.0%)     GraphQL::Schema::Member::TypeSystemHelpers#non_null?
+         5   (0.0%)           5   (0.0%)     String#-@
+         5   (0.0%)           5   (0.0%)     GraphQL::Schema::Argument#visible?
+         4   (0.0%)           4   (0.0%)     GraphQL::TypeKinds::TypeKind#object?
+         8   (0.0%)           4   (0.0%)     GraphQL::Introspection::TypeType#possible_types
+       373   (0.2%)           4   (0.0%)     GraphQL::StaticValidation::DefinitionDependencies#on_document
+       117   (0.1%)           4   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge#fields_and_fragments_from_selection
+        40   (0.0%)           4   (0.0%)     GraphQL::Language::Parser#_reduce_37
+       562   (0.3%)           4   (0.0%)     (garbage collection)
+       304   (0.1%)           4   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge#on_field
+         4   (0.0%)           4   (0.0%)     GraphQL::Schema::Warden#root_type?
+         4   (0.0%)           4   (0.0%)     Array#[]
+         4   (0.0%)           4   (0.0%)     GraphQL::TypeKinds::TypeKind#fields?
+         6   (0.0%)           4   (0.0%)     GraphQL::Execution::Interpreter::Runtime#initialize
+        19   (0.0%)           4   (0.0%)     GraphQL::StaticValidation::ArgumentLiteralsAreCompatible#on_argument
+         4   (0.0%)           4   (0.0%)     GraphQL::Schema::Member::HasInterfaces#own_interface_type_memberships
+         8   (0.0%)           4   (0.0%)     GraphQL::StaticValidation::DefinitionDependencies#resolve_dependencies
+         8   (0.0%)           4   (0.0%)     GraphQL::Schema.default_execution_strategy
+       248   (0.1%)           3   (0.0%)     GraphQL::StaticValidation::ArgumentNamesAreUnique#on_field
+         3   (0.0%)           3   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge::Field.new
+         3   (0.0%)           3   (0.0%)     GraphQL::Schema::NullMask.call
+         3   (0.0%)           3   (0.0%)     Set#add
+         3   (0.0%)           3   (0.0%)     GraphQL::Schema::Member::CachedGraphQLDefinition#type_class
+         3   (0.0%)           3   (0.0%)     GraphQL::TypeKinds::TypeKind#abstract?
+         3   (0.0%)           3   (0.0%)     GraphQL::TypeKinds::TypeKind#union?
+        11   (0.0%)           3   (0.0%)     GraphQL::StaticValidation::FragmentSpreadsArePossible#validate_fragment_in_scope
+        21   (0.0%)           3   (0.0%)     GraphQL::Introspection::InputValueType#serialize_default_value
+         4   (0.0%)           3   (0.0%)     GraphQL::Schema::Member::HasArguments#arguments
+       128   (0.1%)           3   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge#conflicts_within_selection_set
+         3   (0.0%)           3   (0.0%)     GraphQL::Schema::Member::CachedGraphQLDefinition#type_class
+       400   (0.2%)           3   (0.0%)     GraphQL::Language::Visitor#visit_node
+         5   (0.0%)           3   (0.0%)     GraphQL::StaticValidation::VariablesAreUsedAndDefined#follow_spreads
+         7   (0.0%)           3   (0.0%)     GraphQL::StaticValidation::ValidationContext#warden
+         4   (0.0%)           3   (0.0%)     Enumerable#group_by
+        21   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::RequiredArgumentsArePresent#assert_required_args
+         2   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::VariablesAreUsedAndDefined#initialize
+         2   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::BaseVisitor::ContextMethods#field_definition
+         4   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::ValidationContext#path
+         2   (0.0%)           2   (0.0%)     String#force_encoding
+       642   (0.3%)           2   (0.0%)     GraphQL::Schema.get_fields
+        17   (0.0%)           2   (0.0%)     GraphQL::Schema::Warden#visible_enum_value?
+         2   (0.0%)           2   (0.0%)     Array#-
+         7   (0.0%)           2   (0.0%)     Set#each
+         2   (0.0%)           2   (0.0%)     Module#const_get
+        93   (0.0%)           2   (0.0%)     GraphQL::Query#get_field
+         2   (0.0%)           2   (0.0%)     JSON::Ext::Generator::State#configure
+         4   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::ArgumentNamesAreUnique#validate_arguments
+         2   (0.0%)           2   (0.0%)     Array#last
+       256   (0.1%)           2   (0.0%)     GraphQL::StaticValidation::RequiredArgumentsArePresent#on_field
+         8   (0.0%)           2   (0.0%)     GraphQL::Schema::Warden#get_argument
+         2   (0.0%)           2   (0.0%)     Class#superclass
+         2   (0.0%)           2   (0.0%)     GraphQL::Introspection::EnumValueType#name
+         2   (0.0%)           2   (0.0%)     GraphQL::Language::Parser#_reduce_33
+         9   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::DefinitionDependencies#on_fragment_spread
+        16   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::FragmentSpreadsArePossible#on_fragment_spread
+        19   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::BaseVisitor::ContextMethods#on_fragment_spread
+         7   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::LiteralValidator#maybe_raise_if_invalid
+        17   (0.0%)           2   (0.0%)     GraphQL::Language.serialize
+    105939  (49.5%)           2   (0.0%)     Enumerable#each_with_index
+         2   (0.0%)           2   (0.0%)     Array#pop
+         2   (0.0%)           2   (0.0%)     GraphQL::Language::Parser#_reduce_30
+        11   (0.0%)           2   (0.0%)     GraphQL::Schema.query_execution_strategy
+         2   (0.0%)           2   (0.0%)     GraphQL::StaticValidation::FragmentTypesExist#validate_type_exists
+      1187   (0.6%)           2   (0.0%)     GraphQL::Execution::Interpreter#sync_lazies
+         1   (0.0%)           1   (0.0%)     GraphQL::Query::Context#initialize
+       954   (0.4%)           1   (0.0%)     Array#map
+         3   (0.0%)           1   (0.0%)     GraphQL::Query#merge_filters
+         1   (0.0%)           1   (0.0%)     GraphQL::Filter::MergedOnly#initialize
+         1   (0.0%)           1   (0.0%)     Array#first
+         1   (0.0%)           1   (0.0%)     GraphQL::Schema.own_instrumenters
+    108037  (50.4%)           1   (0.0%)     GraphQL::Execution::Multiplex.instrument_and_analyze
+    108035  (50.4%)           1   (0.0%)     GraphQL::Execution::Instrumentation.call_hooks
+       950   (0.4%)           1   (0.0%)     GraphQL::Analysis::AST.analyze_multiplex
+       524   (0.2%)           1   (0.0%)     GraphQL::Query#prepare_ast
+         1   (0.0%)           1   (0.0%)     GraphQL::Language::Parser#initialize
+       357   (0.2%)           1   (0.0%)     GraphQL.scan
+         1   (0.0%)           1   (0.0%)     Integer#<<
+         6   (0.0%)           1   (0.0%)     GraphQL::Language::Parser#_reduce_105
+         1   (0.0%)           1   (0.0%)     GraphQL::Schema.validate_timeout
+         1   (0.0%)           1   (0.0%)     GraphQL::Query::Context#interpreter?
+       418   (0.2%)           1   (0.0%)     GraphQL::StaticValidation::Validator#validate
+         1   (0.0%)           1   (0.0%)     GraphQL::Schema.analysis_engine
+         1   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::ValidationContext#document
+         8   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::DirectivesAreDefined#initialize
+         2   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::FragmentNamesAreUnique#initialize
+         5   (0.0%)           1   (0.0%)     GraphQL::Schema.directives
+         1   (0.0%)           1   (0.0%)     Hash#merge
+       402   (0.2%)           1   (0.0%)     GraphQL::Language::Visitor#visit
+       401   (0.2%)           1   (0.0%)     GraphQL::Language::Visitor#on_node_with_modifications
+       379   (0.2%)           1   (0.0%)     GraphQL::StaticValidation::VariablesAreUsedAndDefined#on_document
+       156   (0.1%)           1   (0.0%)     GraphQL::StaticValidation::BaseVisitor::ContextMethods#on_operation_definition
+       154   (0.1%)           1   (0.0%)     GraphQL::StaticValidation::OperationNamesAreValid#on_operation_definition
+       140   (0.1%)           1   (0.0%)     GraphQL::StaticValidation::VariableUsagesAreAllowed#on_operation_definition
+         2   (0.0%)           1   (0.0%)     GraphQL::Schema::Warden#root_type_for_operation
+         5   (0.0%)           1   (0.0%)     GraphQL::Language::Nodes::Field#children
+         1   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::BaseVisitor::ContextMethods#push_type
+        48   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge#find_conflicts_between_fields_and_fragment
+         1   (0.0%)           1   (0.0%)     Set#initialize
+         2   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::DefinitionDependencies#initialize
+        27   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::BaseVisitor::ContextMethods#on_argument
+         8   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::LiteralValidator#validate
+         3   (0.0%)           1   (0.0%)     GraphQL::Schema::Member::ValidatesInput#validate_input
+         1   (0.0%)           1   (0.0%)     GraphQL::Language::Visitor#on_fragment_spread
+       205   (0.1%)           1   (0.0%)     GraphQL::StaticValidation::BaseVisitor::ContextMethods#on_fragment_with_type
+       205   (0.1%)           1   (0.0%)     GraphQL::StaticValidation::BaseVisitor::ContextMethods#on_fragment_definition
+       202   (0.1%)           1   (0.0%)     GraphQL::StaticValidation::FragmentsAreNamed#on_fragment_definition
+       199   (0.1%)           1   (0.0%)     GraphQL::StaticValidation::FragmentsAreOnCompositeTypes#on_fragment_definition
+         3   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::FragmentsAreOnCompositeTypes#validate_type_is_composite
+       195   (0.1%)           1   (0.0%)     GraphQL::StaticValidation::VariablesAreUsedAndDefined#on_fragment_definition
+         4   (0.0%)           1   (0.0%)     GraphQL::Schema::Member::HasArguments#get_argument
+         1   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::ValidationContext#field_definition
+         2   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::ValidationContext#fragments
+         1   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::ValidationContext#object_types
+         1   (0.0%)           1   (0.0%)     GraphQL::Language::Printer#print_node
+         1   (0.0%)           1   (0.0%)     GraphQL::TypeKinds::TypeKind#scalar?
+         2   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge#find_conflicts_within
+         2   (0.0%)           1   (0.0%)     Enumerable#partition
+         3   (0.0%)           1   (0.0%)     GraphQL::Schema.possible_types
+         2   (0.0%)           1   (0.0%)     Array#none?
+         1   (0.0%)           1   (0.0%)     GraphQL::StaticValidation::ValidationContext#dependencies
+         1   (0.0%)           1   (0.0%)     GraphQL::Analysis::AST.analysis_errors
+    105883  (49.4%)           1   (0.0%)     GraphQL::Execution::Multiplex.begin_query
+    105881  (49.4%)           1   (0.0%)     GraphQL::Execution::Interpreter.begin_query
+         1   (0.0%)           1   (0.0%)     GraphQL::Query#selected_operation
+    105876  (49.4%)           1   (0.0%)     GraphQL::Execution::Interpreter::Runtime#run_eager
+         1   (0.0%)           1   (0.0%)     GraphQL::Schema.get_type
+         1   (0.0%)           1   (0.0%)     GraphQL::Schema::Member::BaseDSLMethods#visible?
+         1   (0.0%)           1   (0.0%)     GraphQL::Query::NullContext.instance
+         1   (0.0%)           1   (0.0%)     GraphQL::Schema::Member::BaseDSLMethods#description
+        15   (0.0%)           1   (0.0%)     JSON.generate
+         1   (0.0%)           1   (0.0%)     GraphQL::Schema::List#graphql_name
+         1   (0.0%)           1   (0.0%)     GraphQL::Execution::Interpreter::Arguments#[]
+         1   (0.0%)           1   (0.0%)     GraphQL::Schema::Member::CachedGraphQLDefinition#type_class
+        14   (0.0%)           1   (0.0%)     GraphQL::Introspection::EnumValueType#is_deprecated
+         1   (0.0%)           1   (0.0%)     JSON::Ext::Generator::State#initialize
+         1   (0.0%)           1   (0.0%)     GraphQL::Schema.own_directives
+         1   (0.0%)           1   (0.0%)     String#==
+         1   (0.0%)           1   (0.0%)     Hash#delete
+         1   (0.0%)           1   (0.0%)     GraphQL::Execution::Interpreter.finish_query
+         8   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::DefinitionDependencies#dependency_map
+         1   (0.0%)           0   (0.0%)     GraphQL::Language::Printer#print
+         1   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::ArgumentsAreDefined#parent_definition
+       193   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::DefinitionDependencies#on_fragment_definition
+       193   (0.1%)           0   (0.0%)     GraphQL::Language::Visitor#on_fragment_definition
+         2   (0.0%)           0   (0.0%)     GraphQL::Language::Nodes::AbstractNode#to_query_string
+       201   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::FragmentTypesExist#on_fragment_definition
+       203   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::FragmentNamesAreUnique#on_fragment_definition
+         2   (0.0%)           0   (0.0%)     GraphQL::Schema.error_bubbling
+         2   (0.0%)           0   (0.0%)     GraphQL::Schema::Scalar.validate_non_null_input
+         1   (0.0%)           0   (0.0%)     GraphQL::Query#result
+         7   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::LiteralValidator#recursively_validate
+         8   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::ValidationContext#validate_literal
+         3   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::VariableUsagesAreAllowed#on_argument
+         2   (0.0%)           0   (0.0%)     GraphQL::Language::Visitor#on_argument
+        22   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::ArgumentsAreDefined#on_argument
+         9   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::VariablesAreUsedAndDefined#on_fragment_spread
+         1   (0.0%)           0   (0.0%)     BasicObject#!=
+         2   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::BaseVisitor#path
+         2   (0.0%)           0   (0.0%)     GraphQL::Schema.references_to
+       247   (0.1%)           0   (0.0%)     GraphQL::Language::Visitor#on_field
+       137   (0.1%)           0   (0.0%)     GraphQL::Language::Visitor#on_operation_definition
+       138   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::SubscriptionRootExists#on_operation_definition
+       138   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::DefinitionDependencies#on_operation_definition
+       139   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::MutationRootExists#on_operation_definition
+       139   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::QueryRootExists#on_operation_definition
+       141   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::VariableNamesAreUnique#on_operation_definition
+       141   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::VariablesAreUsedAndDefined#on_operation_definition
+       143   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::FieldsHaveAppropriateSelections#on_operation_definition
+         4   (0.0%)           0   (0.0%)     GraphQL::Schema::Warden#field_on_visible_interface?
+         1   (0.0%)           0   (0.0%)     GraphQL::Execution::Interpreter::ArgumentsCache#initialize
+         4   (0.0%)           0   (0.0%)     GraphQL::Schema::Warden#unfiltered_interfaces
+       131   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge#setting_errors
+       153   (0.1%)           0   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge#on_operation_definition
+       362   (0.2%)           0   (0.0%)     GraphQL::Language::Visitor#on_document
+       400   (0.2%)           0   (0.0%)     GraphQL::StaticValidation::NoDefinitionsArePresent#on_document
+       400   (0.2%)           0   (0.0%)     GraphQL::StaticValidation::OperationNamesAreValid#on_document
+       400   (0.2%)           0   (0.0%)     GraphQL::StaticValidation::FragmentNamesAreUnique#on_document
+       399   (0.2%)           0   (0.0%)     GraphQL::StaticValidation::FragmentsAreFinite#on_document
+       399   (0.2%)           0   (0.0%)     GraphQL::StaticValidation::FragmentsAreUsed#on_document
+       404   (0.2%)           0   (0.0%)     Timeout.timeout
+       404   (0.2%)           0   (0.0%)     Kernel#catch
+        10   (0.0%)           0   (0.0%)     GraphQL::Schema::Warden#directives
+         1   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::OperationNamesAreValid#initialize
+         1   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::FragmentSpreadsArePossible#initialize
+         1   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::FieldsWillMerge#initialize
+         8   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::NoDefinitionsArePresent#initialize
+        11   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::ValidationContext#initialize
+         2   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::LiteralValidator#initialize
+         1   (0.0%)           0   (0.0%)     GraphQL::Schema.using_ast_analysis?
+         1   (0.0%)           0   (0.0%)     GraphQL::Schema.validate_max_errors
+       422   (0.2%)           0   (0.0%)     GraphQL::Query::ValidationPipeline#valid?
+       422   (0.2%)           0   (0.0%)     GraphQL::Query::ValidationPipeline#ensure_has_validated
+         1   (0.0%)           0   (0.0%)     GraphQL::Schema.static_validator
+         1   (0.0%)           0   (0.0%)     GraphQL::Language::Parser#_reduce_2
+         4   (0.0%)           0   (0.0%)     GraphQL::Language::Parser#_reduce_108
+         3   (0.0%)           0   (0.0%)     GraphQL::Language::Parser#_reduce_25
+         2   (0.0%)           0   (0.0%)     GraphQL::Language::Parser#_reduce_10
+         3   (0.0%)           0   (0.0%)     GraphQL::Language::Parser#_reduce_70
+       161   (0.1%)           0   (0.0%)     Racc::Parser#do_parse
+       356   (0.2%)           0   (0.0%)     GraphQL.scan_with_ragel
+       356   (0.2%)           0   (0.0%)     GraphQL::Language::Lexer.tokenize
+       519   (0.2%)           0   (0.0%)     GraphQL::Language::Parser#parse_document
+       521   (0.2%)           0   (0.0%)     GraphQL.parse
+       521   (0.2%)           0   (0.0%)     GraphQL.parse_with_racc
+       521   (0.2%)           0   (0.0%)     GraphQL::Language::Parser.parse
+       946   (0.4%)           0   (0.0%)     GraphQL::Query#valid?
+       525   (0.2%)           0   (0.0%)     GraphQL::Query#validation_pipeline
+         1   (0.0%)           0   (0.0%)     GraphQL::Schema.subscription
+    108035  (50.4%)           0   (0.0%)     GraphQL::Execution::Instrumentation.each_query_call_hooks
+         3   (0.0%)           0   (0.0%)     GraphQL::Schema.interpreter?
+    108037  (50.4%)           0   (0.0%)     GraphQL::Execution::Instrumentation.apply_instrumenters
+         2   (0.0%)           0   (0.0%)     GraphQL::Schema.instrumenters
+         2   (0.0%)           0   (0.0%)     GraphQL::Schema.mutation_execution_strategy
+    108040  (50.4%)           0   (0.0%)     GraphQL::Tracing::Traceable#trace
+         3   (0.0%)           0   (0.0%)     GraphQL::Execution::Multiplex.supports_multiplexing?
+         1   (0.0%)           0   (0.0%)     GraphQL::Schema.tracers
+    108042  (50.4%)           0   (0.0%)     GraphQL::Execution::Multiplex.run_queries
+         2   (0.0%)           0   (0.0%)     GraphQL::Execution::Multiplex#initialize
+         2   (0.0%)           0   (0.0%)     GraphQL::Filter#merge
+         1   (0.0%)           0   (0.0%)     Enumerable#reduce
+         1   (0.0%)           0   (0.0%)     GraphQL::Filter::MergedOnly.build
+    108049  (50.4%)           0   (0.0%)     <main>
+    108049  (50.4%)           0   (0.0%)     <main>
+    108049  (50.4%)           0   (0.0%)     <top (required)>
+    108049  (50.4%)           0   (0.0%)     Bundler.with_friendly_errors
+    108049  (50.4%)           0   (0.0%)     block in <top (required)>
+    108049  (50.4%)           0   (0.0%)     Bundler::CLI.start
+    108049  (50.4%)           0   (0.0%)     Bundler::Thor::Base::ClassMethods#start
+    108049  (50.4%)           0   (0.0%)     Bundler::CLI.dispatch
+    108049  (50.4%)           0   (0.0%)     Bundler::Thor.dispatch
+    108049  (50.4%)           0   (0.0%)     Bundler::Thor::Invocation#invoke_command
+    108049  (50.4%)           0   (0.0%)     Bundler::Thor::Command#run
+    108049  (50.4%)           0   (0.0%)     Bundler::CLI#exec
+    108049  (50.4%)           0   (0.0%)     Bundler::CLI::Exec#run
+    108049  (50.4%)           0   (0.0%)     Bundler::CLI::Exec#kernel_load
+    108049  (50.4%)           0   (0.0%)     Kernel.load
+    108049  (50.4%)           0   (0.0%)     <top (required)>
+    108049  (50.4%)           0   (0.0%)     Kernel#load
+    108049  (50.4%)           0   (0.0%)     <top (required)>
+    108049  (50.4%)           0   (0.0%)     Rake::Application#standard_exception_handling
+    108049  (50.4%)           0   (0.0%)     Rake::Application#run
+    108049  (50.4%)           0   (0.0%)     Rake::Application#run_with_threads
+    108049  (50.4%)           0   (0.0%)     Rake::Application#top_level
+    108049  (50.4%)           0   (0.0%)     Rake::Application#invoke_task
+    108049  (50.4%)           0   (0.0%)     Rake::Task#invoke
+    108049  (50.4%)           0   (0.0%)     Monitor#synchronize
+    108049  (50.4%)           0   (0.0%)     Rake::Task#invoke_with_call_chain
+         1   (0.0%)           0   (0.0%)     JSON.create_pretty_state
+    108049  (50.4%)           0   (0.0%)     Rake::Task#execute
+    108049  (50.4%)           0   (0.0%)     block (2 levels) in <top (required)>
+    108049  (50.4%)           0   (0.0%)     StackProf.run
+         1   (0.0%)           0   (0.0%)     GraphQL::Execution::Interpreter::Runtime#delete_interpreter_context
+    108047  (50.4%)           0   (0.0%)     GraphQL::Execution::Multiplex.run_all
+      1187   (0.6%)           0   (0.0%)     GraphQL::Execution::Interpreter.finish_multiplex
+         5   (0.0%)           0   (0.0%)     GraphQL::Query#initialize
+    108049  (50.4%)           0   (0.0%)     GraphQLBenchmark.profile_large_introspection
+    108049  (50.4%)           0   (0.0%)     GraphQL::Schema.to_json
+      1185   (0.6%)           0   (0.0%)     GraphQL::Execution::Interpreter::Resolve.resolve_all
+    108047  (50.4%)           0   (0.0%)     GraphQL::Schema.as_json
+    108047  (50.4%)           0   (0.0%)     GraphQL::Schema.execute
+    108047  (50.4%)           0   (0.0%)     GraphQL::Schema.multiplex
+         3   (0.0%)           0   (0.0%)     GraphQL::Execution::Multiplex.finish_query
+         3   (0.0%)           0   (0.0%)     GraphQL::Introspection::SchemaType#directives
+         2   (0.0%)           0   (0.0%)     JSON.pretty_generate
+         1   (0.0%)           0   (0.0%)     GraphQL::Introspection::EntryPoints#__schema
+         1   (0.0%)           0   (0.0%)     GraphQL::Schema::LazyHandlingMethods#sync_lazy
+    105880  (49.4%)           0   (0.0%)     GraphQL::Execution::Interpreter#evaluate
+    107080  (50.0%)           0   (0.0%)     GraphQL::Execution::Multiplex.run_as_multiplex
+         1   (0.0%)           0   (0.0%)     GraphQL::Analysis::AST.analyze_query
+      1620   (0.8%)           0   (0.0%)     GraphQL::Schema::Warden#reachable_types
+      1629   (0.8%)           0   (0.0%)     GraphQL::Introspection::SchemaType#types
+         1   (0.0%)           0   (0.0%)     GraphQL::Query#analyzers
+         1   (0.0%)           0   (0.0%)     GraphQL::Query#variables
+         1   (0.0%)           0   (0.0%)     Enumerable#partition
+         6   (0.0%)           0   (0.0%)     Hash#each_key
+         1   (0.0%)           0   (0.0%)     GraphQL::Schema::Directive.locations
+         1   (0.0%)           0   (0.0%)     GraphQL::Schema.orphan_types
+         1   (0.0%)           0   (0.0%)     GraphQL::StaticValidation::BaseVisitor::ContextMethods#type_definition
+
+
+Total allocated: 10557256 bytes (74435 objects)
+Total retained:  0 bytes (0 objects)
+
+allocated memory by gem
+-----------------------------------
+   9964425  graphql-ruby/lib
+    541815  json-2.6.3
+     44856  other
+      6160  set
+
+allocated memory by file
+-----------------------------------
+   6971672  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb
+    812832  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb
+    620464  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/object.rb
+    541815  /Users/rmosolgo/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/json-2.6.3/lib/json/common.rb
+    366192  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/field.rb
+    246952  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb
+    203008  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/argument.rb
+    182488  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/resolve.rb
+    164088  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/arguments_cache.rb
+    163968  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/arguments.rb
+     69392  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_fields.rb
+     45920  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb
+     25256  parser.y
+     20632  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_will_merge.rb
+     18160  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_interfaces.rb
+     18000  /Users/rmosolgo/code/graphql-ruby/lib/graphql/introspection/type_type.rb
+     16768  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/lexer.rb
+     16320  (eval)
+      6160  /Users/rmosolgo/.rbenv/versions/3.1.0/lib/ruby/3.1.0/set.rb
+      4688  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/definition_dependencies.rb
+      3824  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fragment_spreads_are_possible.rb
+      3776  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema.rb
+      3240  <internal:pack>
+      3160  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/visitor.rb
+      2808  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/nodes.rb
+      2512  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/variables_are_used_and_defined.rb
+      2400  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_are_defined_on_type.rb
+      2096  /Users/rmosolgo/code/graphql-ruby/lib/graphql/query.rb
+      1928  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/base_visitor.rb
+      1440  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/argument_names_are_unique.rb
+      1433  /Users/rmosolgo/code/graphql-ruby/lib/graphql/introspection.rb
+      1128  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/multiplex.rb
+      1008  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language.rb
+      1000  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/required_arguments_are_present.rb
+       928  /Users/rmosolgo/code/graphql-ruby/lib/graphql/introspection/schema_type.rb
+       880  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter.rb
+       880  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/enum.rb
+       856  /Users/rmosolgo/code/graphql-ruby/lib/graphql/analysis/ast.rb
+       696  /Users/rmosolgo/code/graphql-ruby/lib/graphql/filter.rb
+       696  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/validation_context.rb
+       600  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/arguments_are_defined.rb
+       536  /Users/rmosolgo/code/graphql-ruby/lib/graphql/query/context.rb
+       520  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/variable_usages_are_allowed.rb
+       504  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/validator.rb
+       496  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/literal_validator.rb
+       408  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fragment_names_are_unique.rb
+       400  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/argument_literals_are_compatible.rb
+       368  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/operation_names_are_valid.rb
+       240  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/printer.rb
+       240  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_deprecation_reason.rb
+
+allocated memory by location
+-----------------------------------
+   2641056  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:405
+   2178960  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:510
+    539670  /Users/rmosolgo/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/json-2.6.3/lib/json/common.rb:406
+    501144  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/object.rb:52
+    500808  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:276
+    500808  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:41
+    302904  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:65
+    250152  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:100
+    238400  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:718
+    221600  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:413
+    203008  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/argument.rb:295
+    202104  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/field.rb:932
+    182448  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/resolve.rb:38
+    163968  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/arguments.rb:43
+    163968  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/arguments_cache.rb:79
+    163968  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/field.rb:839
+    163968  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:181
+    163968  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:202
+    156160  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:174
+    119320  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/object.rb:76
+    113168  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:178
+    108720  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:768
+    106568  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:338
+     70680  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:333
+     69120  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:759
+     53000  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:102
+     45920  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+     43048  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:124
+     39040  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:452
+     39040  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:198
+     39040  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:199
+     26000  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_fields.rb:42
+     21992  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_fields.rb:22
+     21400  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_fields.rb:23
+     18160  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_interfaces.rb:76
+     16320  (eval):3
+     13720  /Users/rmosolgo/code/graphql-ruby/lib/graphql/introspection/type_type.rb:92
+     13360  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/lexer.rb:1414
+     10080  parser.y:109
+      9400  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:171
+      9120  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:41
+      8504  parser.y:549
+      5744  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_will_merge.rb:334
+      4432  /Users/rmosolgo/.rbenv/versions/3.1.0/lib/ruby/3.1.0/set.rb:246
+      4320  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_will_merge.rb:344
+      4280  /Users/rmosolgo/code/graphql-ruby/lib/graphql/introspection/type_type.rb:60
+      4280  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:195
+      3424  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:345
+      3200  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/lexer.rb:1413
+      3200  <internal:pack>:145
+
+allocated memory by class
+-----------------------------------
+   5127480  Hash
+   3550168  Array
+    591511  String
+    500808  GraphQL::Execution::Interpreter::Runtime::GraphQLSelectionSet
+    238480  GraphQL::Execution::Interpreter::Runtime::GraphQLResultHash
+    161920  Proc
+    119320  <<Unknown>>
+     87856  Enumerator
+     69120  GraphQL::Execution::Interpreter::Runtime::GraphQLResultArray
+     39040  GraphQL::Execution::Interpreter::ArgumentValue
+     39040  GraphQL::Execution::Interpreter::Arguments
+     13360  GraphQL::Language::Token
+      6720  GraphQL::Language::Nodes::Field
+      4320  GraphQL::StaticValidation::FieldsWillMerge::Field
+      1577  JSON::Ext::Generator::State
+       640  GraphQL::Language::Nodes::FragmentSpread
+       480  GraphQL::StaticValidation::DefinitionDependencies::NodeWithPath
+       440  GraphQL::Language::Nodes::Argument
+       320  GraphQL::StaticValidation::FieldsWillMerge::FragmentSpread
+       320  GraphQL::StaticValidation::FragmentSpreadsArePossible::FragmentSpread
+       320  Range
+       312  GraphQL::Language::Nodes::FragmentDefinition
+       296  GraphQL::Query
+       296  GraphQL::StaticValidation::InterpreterVisitor
+       288  Method
+       288  Racc::CparseParams
+       280  GraphQL::Query::InputValidationResult
+       280  Set
+       240  GraphQL::Language::Nodes::TypeName
+       200  GraphQL::Schema::Warden
+       136  GraphQL::Query::Context
+       128  GraphQL::Execution::Interpreter::Runtime
+       128  GraphQL::Query::ValidationPipeline
+       120  GraphQL::Filter
+       120  GraphQL::Language::Parser
+       120  GraphQL::Language::Printer
+       112  GraphQL::Language::Nodes::OperationDefinition
+        88  GraphQL::Execution::Multiplex
+        88  GraphQL::StaticValidation::ValidationContext
+        72  GraphQL::Query::Variables
+        72  GraphQL::StaticValidation::DefinitionDependencies::DependencyMap
+        72  GraphQL::StaticValidation::LiteralValidator
+        40  GraphQL::Dataloader::NullDataloader
+        40  GraphQL::Execution::Interpreter
+        40  GraphQL::Execution::Interpreter::ArgumentsCache
+        40  GraphQL::Filter::MergedOnly
+        40  GraphQL::Language::Nodes::Document
+        40  GraphQL::Query::Result
+        40  GraphQL::StaticValidation::Validator
+
+allocated objects by gem
+-----------------------------------
+     73726  graphql-ruby/lib
+       672  other
+        19  json-2.6.3
+        18  set
+
+allocated objects by file
+-----------------------------------
+     46071  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb
+      7348  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb
+      5966  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/object.rb
+      2982  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/resolve.rb
+      2182  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/field.rb
+      1952  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/argument.rb
+      1801  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb
+      1148  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb
+       978  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/arguments_cache.rb
+       976  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/arguments.rb
+       454  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_interfaces.rb
+       389  (eval)
+       383  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_will_merge.rb
+       344  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_fields.rb
+       249  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/lexer.rb
+       214  /Users/rmosolgo/code/graphql-ruby/lib/graphql/introspection/type_type.rb
+       201  parser.y
+        81  <internal:pack>
+        79  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/visitor.rb
+        72  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/definition_dependencies.rb
+        66  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fragment_spreads_are_possible.rb
+        60  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_are_defined_on_type.rb
+        47  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/base_visitor.rb
+        44  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/nodes.rb
+        38  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema.rb
+        32  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/variables_are_used_and_defined.rb
+        25  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/required_arguments_are_present.rb
+        22  /Users/rmosolgo/code/graphql-ruby/lib/graphql/query.rb
+        19  /Users/rmosolgo/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/json-2.6.3/lib/json/common.rb
+        18  /Users/rmosolgo/.rbenv/versions/3.1.0/lib/ruby/3.1.0/set.rb
+        15  /Users/rmosolgo/code/graphql-ruby/lib/graphql/analysis/ast.rb
+        15  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/argument_names_are_unique.rb
+        15  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/arguments_are_defined.rb
+        13  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/variable_usages_are_allowed.rb
+        11  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/multiplex.rb
+        11  /Users/rmosolgo/code/graphql-ruby/lib/graphql/filter.rb
+        10  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/argument_literals_are_compatible.rb
+         7  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter.rb
+         7  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/validation_context.rb
+         6  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language.rb
+         6  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/printer.rb
+         6  /Users/rmosolgo/code/graphql-ruby/lib/graphql/query/context.rb
+         6  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/enum.rb
+         6  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_deprecation_reason.rb
+         6  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/literal_validator.rb
+         6  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fragment_names_are_unique.rb
+         5  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/find_inherited_value.rb
+         5  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/scalar.rb
+         5  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/operation_names_are_valid.rb
+         5  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/validator.rb
+
+allocated objects by location
+-----------------------------------
+     12970  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:405
+     12970  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:510
+      2983  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/object.rb:52
+      2983  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/object.rb:76
+      2981  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/resolve.rb:38
+      2981  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:276
+      2981  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:41
+      2980  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:413
+      2980  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:718
+      1952  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/argument.rb:295
+      1952  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:174
+      1803  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:65
+      1767  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:333
+      1489  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:100
+      1299  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:768
+      1286  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:178
+      1203  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/field.rb:932
+      1148  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+       976  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/arguments.rb:43
+       976  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/arguments_cache.rb:79
+       976  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:452
+       976  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/field.rb:839
+       976  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:181
+       976  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:198
+       976  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:199
+       976  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_arguments.rb:202
+       864  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:102
+       864  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:759
+       619  /Users/rmosolgo/code/graphql-ruby/lib/graphql/execution/interpreter/runtime.rb:124
+       454  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_interfaces.rb:76
+       389  (eval):3
+       228  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:41
+       167  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/lexer.rb:1414
+       130  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_fields.rb:42
+       107  /Users/rmosolgo/code/graphql-ruby/lib/graphql/introspection/type_type.rb:60
+       107  /Users/rmosolgo/code/graphql-ruby/lib/graphql/introspection/type_type.rb:92
+       107  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_fields.rb:22
+       107  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/member/has_fields.rb:23
+       107  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:171
+       107  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:195
+        86  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_will_merge.rb:334
+        81  parser.y:549
+        80  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/lexer.rb:1413
+        80  <internal:pack>:145
+        78  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/visitor.rb:125
+        60  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_are_defined_on_type.rb:7
+        60  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_will_merge.rb:343
+        60  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/rules/fields_will_merge.rb:344
+        60  parser.y:109
+        56  /Users/rmosolgo/code/graphql-ruby/lib/graphql/schema/warden.rb:338
+
+allocated objects by class
+-----------------------------------
+     30614  Hash
+     27735  Array
+      2983  <<Unknown>>
+      2981  GraphQL::Execution::Interpreter::Runtime::GraphQLResultHash
+      2981  GraphQL::Execution::Interpreter::Runtime::GraphQLSelectionSet
+      2024  Proc
+      1261  String
+       976  GraphQL::Execution::Interpreter::ArgumentValue
+       976  GraphQL::Execution::Interpreter::Arguments
+       864  GraphQL::Execution::Interpreter::Runtime::GraphQLResultArray
+       646  Enumerator
+       167  GraphQL::Language::Token
+        60  GraphQL::Language::Nodes::Field
+        60  GraphQL::StaticValidation::FieldsWillMerge::Field
+        12  GraphQL::StaticValidation::DefinitionDependencies::NodeWithPath
+         8  GraphQL::Language::Nodes::FragmentSpread
+         8  GraphQL::StaticValidation::FieldsWillMerge::FragmentSpread
+         8  GraphQL::StaticValidation::FragmentSpreadsArePossible::FragmentSpread
+         8  Range
+         7  GraphQL::Query::InputValidationResult
+         7  JSON::Ext::Generator::State
+         7  Set
+         5  GraphQL::Language::Nodes::Argument
+         4  Method
+         3  GraphQL::Filter
+         3  GraphQL::Language::Nodes::FragmentDefinition
+         3  GraphQL::Language::Nodes::TypeName
+         3  GraphQL::Language::Printer
+         1  GraphQL::Dataloader::NullDataloader
+         1  GraphQL::Execution::Interpreter
+         1  GraphQL::Execution::Interpreter::ArgumentsCache
+         1  GraphQL::Execution::Interpreter::Runtime
+         1  GraphQL::Execution::Multiplex
+         1  GraphQL::Filter::MergedOnly
+         1  GraphQL::Language::Nodes::Document
+         1  GraphQL::Language::Nodes::OperationDefinition
+         1  GraphQL::Language::Parser
+         1  GraphQL::Query
+         1  GraphQL::Query::Context
+         1  GraphQL::Query::Result
+         1  GraphQL::Query::ValidationPipeline
+         1  GraphQL::Query::Variables
+         1  GraphQL::Schema::Warden
+         1  GraphQL::StaticValidation::DefinitionDependencies::DependencyMap
+         1  GraphQL::StaticValidation::InterpreterVisitor
+         1  GraphQL::StaticValidation::LiteralValidator
+         1  GraphQL::StaticValidation::ValidationContext
+         1  GraphQL::StaticValidation::Validator
+         1  Racc::CparseParams
+
+retained memory by gem
+-----------------------------------
+NO DATA
+
+retained memory by file
+-----------------------------------
+NO DATA
+
+retained memory by location
+-----------------------------------
+NO DATA
+
+retained memory by class
+-----------------------------------
+NO DATA
+
+retained objects by gem
+-----------------------------------
+NO DATA
+
+retained objects by file
+-----------------------------------
+NO DATA
+
+retained objects by location
+-----------------------------------
+NO DATA
+
+retained objects by class
+-----------------------------------
+NO DATA
+
+
+Allocated String Report
+-----------------------------------
+       500  "arg"
+       500  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+       100  "field0"
+       100  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+       100  "field1"
+       100  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+       100  "field2"
+       100  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+       100  "field3"
+       100  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+       100  "field4"
+       100  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+        21  "name"
+        16  <internal:pack>:145
+         5  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+        11  "description"
+         6  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         5  <internal:pack>:145
+
+        10  "includeDeprecated"
+         5  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         5  <internal:pack>:145
+
+        10  "kind"
+         9  <internal:pack>:145
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         8  "ofType"
+         7  <internal:pack>:145
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         6  "__Type"
+         4  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/printer.rb:121
+         2  <internal:pack>:145
+
+         6  "deprecationReason"
+         3  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         3  <internal:pack>:145
+
+         6  "isDeprecated"
+         3  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         3  <internal:pack>:145
+
+         5  "TypeRef"
+         5  <internal:pack>:145
+
+         5  "false"
+         5  /Users/rmosolgo/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/json-2.6.3/lib/json/common.rb:312
+
+         4  "... TypeRef"
+         4  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/base_visitor.rb:143
+
+         4  "InputValue"
+         4  <internal:pack>:145
+
+         4  "args"
+         2  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         2  <internal:pack>:145
+
+         4  "type"
+         2  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         2  <internal:pack>:145
+
+         3  "... InputValue"
+         3  /Users/rmosolgo/code/graphql-ruby/lib/graphql/static_validation/base_visitor.rb:143
+
+         3  "__InputValue"
+         2  /Users/rmosolgo/code/graphql-ruby/lib/graphql/language/printer.rb:121
+         1  <internal:pack>:145
+
+         2  "\n"
+         1  /Users/rmosolgo/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/json-2.6.3/lib/json/common.rb:95
+         1  /Users/rmosolgo/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/json-2.6.3/lib/json/common.rb:96
+
+         2  "FullType"
+         2  <internal:pack>:145
+
+         2  "defaultValue"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "directives"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "enumValues"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "fields"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "if"
+         2  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         2  "inputFields"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "interfaces"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "locations"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "mutationType"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "possibleTypes"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "queryType"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "subscriptionType"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         2  "types"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+         1  <internal:pack>:145
+
+         1  "rootfield32"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield33"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield34"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield35"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield36"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield37"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield38"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield39"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield4"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield40"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield41"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield42"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
+         1  "rootfield43"
+         1  /Users/rmosolgo/code/graphql-ruby/lib/graphql/types/string.rb:13
+
