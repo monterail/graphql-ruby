@@ -30,6 +30,10 @@ module GraphQL
         # @see authorized_new to make instances
         protected :new
 
+        def pre_authorized_new(object, context)
+          self.new(object, context)
+        end
+
         # Make a new instance of this type _if_ the auth check passes,
         # otherwise, raise an error.
         #
@@ -48,6 +52,8 @@ module GraphQL
         # @return [GraphQL::Schema::Object, GraphQL::Execution::Lazy]
         # @raise [GraphQL::UnauthorizedError] if the user-provided hook returns `false`
         def authorized_new(object, context)
+          return object if object.is_a?(GraphQL::Schema::Object)
+
           trace_payload = { context: context, type: self, object: object, path: context[:current_path] }
 
           maybe_lazy_auth_val = context.query.trace("authorized", trace_payload) do
