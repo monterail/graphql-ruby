@@ -35,7 +35,12 @@ module GraphQL
 
     TYPE_CLASSES.each do |type_class|
       refine type_class.singleton_class do
-        include Methods
+        if RUBY_VERSION >= "3.1"
+          # https://rubyreferences.github.io/rubychanges/3.1.html#refinement-class
+          import_methods Methods
+        else
+          include Methods
+        end
       end
     end
   end
